@@ -9,18 +9,45 @@
       src="https://kit.fontawesome.com/c8e4d183c2.js"
       crossorigin="anonymous"
     ></script>
+    <script src="script.js"></script>
   </head>
   <body>
     <section id="landing">
       <nav>
         <div class="nav__container">
           <img class="logo" src="./assets/Library.svg" alt="" />
-          <ul>
+          <ul class="">
             <li><a href="#" class="nav__link">Home</a></li>
             <li><a href="#" class="nav__link">Content</a></li>
             <li><a href="#" class="nav__link nav__link--primary">Books</a></li>
           </ul>
+        
+        <!-- BURGER MENU BUTTON -->
+        <!-- BURGER MENU BUTTON -->
+        <!-- BURGER MENU BUTTON -->
+        <button class="btn__menu" onclick="openMenu()">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="menu__backdrop">
+          <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+            <i class="fas fa-times"></i>
+          </button>
+          <ul class="menu__links">
+            <li class="menu__list">
+              <a class="menu__link" href="#features" onclick="closeMenu()">Home</a>
+            </li>
+            <li class="menu__list">
+              <a class="menu__link" href="#features" onclick="closeMenu()">Books</a>
+            </li>
+            <li class="menu__list">
+              <a class="menu__link no-cursor" href="#features" onclick="closeMenu()">Contact</a>
+            </li>
+          </ul>
         </div>
+        <!-- BURGER MENU BUTTON -->
+        <!-- BURGER MENU BUTTON -->
+        <!-- BURGER MENU BUTTON -->
+      </div>
       </nav>
       <header>
         <div class="header__container">
@@ -29,7 +56,9 @@
             <h2>
               Find your dream book with <span class="orange">Library</span>
             </h2>
+            <a href="#features">
             <button class="btn">Browse books</button>
+            </a>  
           </div>
           <figure class="header__img--wrapper">
             <img src="./assets/Undraw_Books.svg" alt="" />
@@ -294,12 +323,14 @@
       </section>
       <section id="explore">
         <div class="container">
-          <div class="row">
+          <div class="row row">
             <h2 class="section__title">
               Explore more <span class="orange"> Books </span>
             </h2>
             <div class="row__column">
-              <button class="btn">Browse books</button>
+              <a href="#features">
+                <button class="btn">Browse books</button>
+              </a>
             </div>
           </div>
         </div>
@@ -308,10 +339,14 @@
 
     <footer>
       <div class="container">
-        <div class="row">
+        <div class="row row__column">
           <a href="#">
             <figure class="footer__logo">
-              <img src="./assets/Library.svg" class="footer__logo--img" alt=""/>
+              <img
+                src="./assets/Library.svg"
+                class="footer__logo--img"
+                alt=""
+              />
             </figure>
           </a>
           <div class="footer__list">
